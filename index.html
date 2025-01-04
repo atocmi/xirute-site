@@ -45,6 +45,48 @@
         }
         input, textarea {
             width: 100%;
-
-<form action="https://formsubmit.co/tu-email@example.com" method="POST">
-
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Xirute</h1>
+    </header>
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to Xirute, your go-to platform for [describe your purpose or niche].</p>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/tu-email@example.com" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Xirute. All rights reserved.</p>
+    </footer>
+</body>
+</html>
