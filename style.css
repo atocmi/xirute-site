@@ -1,44 +1,116 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
+/* Header */
 header {
-    background-color: #4CAF50;
+    background: #4CAF50;
     color: white;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-nav {
-    margin: 1rem 0;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
+header .menu a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin-left: 1.5rem;
     font-weight: bold;
+    font-size: 1rem;
 }
 
-nav a:hover {
+header .menu a:hover {
     text-decoration: underline;
 }
 
-section {
-    margin: 2rem auto;
-    padding: 1rem;
-    max-width: 800px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-footer {
-    margin-top: 2rem;
-    padding: 1rem 0;
-    background-color: #333;
+/* Hero Section */
+.hero {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #67e38e);
     color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background: white;
+    color: #4CAF50;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn:hover {
+    background: #f1f1f1;
+}
+
+/* Contact Section */
+.contact {
+    margin: 6rem auto 2rem;
+    max-width: 800px;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact .social a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact .social a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
