@@ -4,70 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Xirute</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-        }
-        nav {
-            margin: 1rem 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin: 2rem auto;
-            padding: 1rem;
-            max-width: 800px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        footer {
-            margin-top: 2rem;
-            padding: 1rem 0;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Contacto</h1>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" class="logo">Xirute</a>
+            <div class="menu">
+                <a href="index.html">Dashboard</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
         </nav>
     </header>
-    <section>
-        <h2>Ponte en contacto</h2>
-        <p>Email:
-            <a href="mailto:info@xirute.net,admin@xirute.net,support@xirute.net?subject=Consulta%20desde%20Xirute&body=Hola,%20tengo%20una%20consulta.">
-                Contactar por correo
-            </a>
-        </p>
-        <p>Teléfono: <a href="tel:+1234567890">+1 234 567 890</a></p>
-        <p>Síguenos en: 
-            <a href="https://www.facebook.com/xirute" target="_blank">Facebook</a> | 
-            <a href="https://www.twitter.com/xirute" target="_blank">Twitter</a>
-        </p>
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>Email us at: <a href="mailto:info@xirute.net">info@xirute.net</a></p>
+        <p>Call us: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <div class="social">
+            <a href="https://facebook.com/xirute" target="_blank">Facebook</a>
+            <a href="https://twitter.com/xirute" target="_blank">Twitter</a>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2025 Xirute. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Xirute. All rights reserved.</p>
     </footer>
 </body>
 </html>
